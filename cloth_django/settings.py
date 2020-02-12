@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'cloth_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cloth_db',
-        'USER': 'manager',
-        'PASSWORD': 'manager',
-        'HOST': 'localhost'
+        'NAME': 'dcpmakk5gdsrjt',
+        'USER': 'thoaqzbvwcywyf',
+        'PASSWORD': 'ea18fc8586f1e3ef3193677098ada13684e58fb0664aef874ee058d8c60cd011',
+        'HOST': 'ec2-184-72-236-3.compute-1.amazonaws.com'
     }
 }
 
