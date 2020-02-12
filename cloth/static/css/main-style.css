@@ -7,13 +7,12 @@ body {
 
 .header {
   display: flex;
- 
-  line-height: 5em;
-  height: 5em;
+  border:2px green solid;
+
 }
 
 .main-title {
-  font-size: 300%;
+  font-size: 50px;
   /* flex-grow: 6;
   font-weight: 800;*/
   color: seagreen;
@@ -22,14 +21,16 @@ body {
 }
 
 .nav-bar {
-  /* margin: 1em 0; */
+  
+  line-height: 80px;
+  height: 80px;
+  display:inline;
+  padding: 60px 20px ;
+  flex-basis:20%;
   box-sizing: border-box;
-  text-align: left;
-  font-size:20px;
-  font-weight: bolder;
-  line-height: 1em;
-  height: 1em;
- 
+  text-align: bottom;
+
+
 }
   /* display: flex;
   flex-grow: 2;
@@ -157,11 +158,14 @@ img{
   height: 30vmin;
 }
 
-
+.prod_page{
+  border:2px solid green;
+}
 .prod_list{
   margin: 2%;
   display: flex;
   flex-wrap: wrap;
+  border:2px orange solid;
 
 }
 
@@ -182,21 +186,22 @@ img{
   height: 40px;
 
 }
-
+ /* 
 .prod_name{
-  box-sizing: border-box;
+ box-sizing: border-box;
   text-align: left;
   font-size:20px;
   font-weight: bolder;
   line-height: 40px;
   height: 40px;
-}
+} */
 
 .prod_price{
-  box-sizing: border-box;
-  text-align: left;
+  padding:0 10px;
+  /* box-sizing: border-box;
+  text-align: right;
   line-height: 40px;
-  height: 40px;
+  height: 40px; */
 
 
 }

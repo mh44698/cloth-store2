@@ -4,7 +4,9 @@
 <h2>{{product.name}}</h2>
 <h6><b>Price: ${{product.price}}</b> | <b>Quantity: {{product.quantity}}</b></h6>
 {%if product.img%}
-<div style="background-image: url({{product.img.url}}); width: 30vmin; height:30vmin;">
+<div>
+  <img class="detail_img" src ="{{product.img.url}}" alt = ''>
+</div>
   {%endif%}
 
   <p>{{product.price}}</p>

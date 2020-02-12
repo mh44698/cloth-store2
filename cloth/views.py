@@ -35,13 +35,14 @@ def product_create(request):
 
 
 def product_edit(request, id):
+    product = Product.objects.get(id = id)
     if request.method == 'POST':
-        form = ProductForm(request.POST or None, request.FILES or None)
+        form = ProductForm(request.POST or None, request.FILES or None, instance = product)
         if form.is_valid():
             product = form.save()
             return redirect('product_list')
     else:
-        form = ProductForm()
+        form = ProductForm(instance = product)
     return render(request, 'cloth/product_form.html', {'form': form})
 
 
