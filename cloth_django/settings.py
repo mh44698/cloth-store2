@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'ddm9kr9f0hcips',
         'USER': 'pfzzchgvlsdohb',
         'PASSWORD': '6804ef1be3a42f95f56ff3e3aa958149cfad72bc9bbc88c5e9308b45bf567fb2',
-        'HOST': 'ec2-184-72-235-159.compute-1.amazonaws.com:5432'
+        'HOST': 'ec2-184-72-235-159.compute-1.amazonaws.com'
     }
 }
 
