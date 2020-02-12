@@ -2,20 +2,29 @@
 {%block content%}
 <h1>Product list</h1>
 <a href="{% url 'product_create' %}">Create</a>
+<div class="prod_list">
 {%for product in products%}
-<h2>{{product.name}}</h2>
-<a href="{% url 'product_detail' id=product.id %}">
-  Detail
-</a>
 
-{%if product.img%}
-<div style="background-image: url({{product.img.url}}); width: 30vmin; height:30vmin;">
-  {%endif%}
+  
+  <div class = "prod_card">
+    <div class="prod_info">
+        <div class="prod_name">{{product.name}}</div>
+        <div class="prod_price">{{product.price}}</div>
+    </div>
+        <a href="{% url 'product_detail' id=product.id %}">Detail</a>
 
-  <p>{{product.price}}</p>
-  <a href="{% url 'product_edit' id=product.id %}">Edit</a>
-  <a href="{% url 'product_delete' id=product.id %}">Delete</a>
-</div>
+    {%if product.img%}
+    <div>
+        <img class="detail_img" src ="{{product.img.url}}" alt = ''>
+    </div>
+      {%endif%}
+
+      <br>
+      <a href="{% url 'product_edit' id=product.id %}">Edit</a>
+      <a href="{% url 'product_delete' id=product.id %}">Delete</a>
+    </div>
+
 
 {%endfor%}
+</div>
 {%endblock%}
