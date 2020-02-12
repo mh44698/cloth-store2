@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+#import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,9 @@ SECRET_KEY = '6-i28-m)=i5+_n%y(d$bx$r870slrx*v6cx9^c=)sg2wc0e=bo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1',            
+'limitless-beach-97890.herokuapp.com']
 
 
 # Application definition
@@ -48,7 +51,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'cloth_django.urls'
 
@@ -77,10 +82,10 @@ WSGI_APPLICATION = 'cloth_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cloth_db',
-        'USER': 'manager',
-        'PASSWORD': 'manager',
-        'HOST': 'localhost'
+        'NAME': 'ddm9kr9f0hcips',
+        'USER': 'pfzzchgvlsdohb',
+        'PASSWORD': '6804ef1be3a42f95f56ff3e3aa958149cfad72bc9bbc88c5e9308b45bf567fb2',
+        'HOST': 'ec2-184-72-235-159.compute-1.amazonaws.com'
     }
 }
 
@@ -125,3 +130,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 MEDIA_URL ='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'static', 'media')
+# Activate Django-Heroku.
+#django_heroku.settings(locals())
