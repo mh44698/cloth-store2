@@ -7,7 +7,7 @@ body {
 
 .header {
   display: flex;
-  border:2px green solid;
+ 
 
 }
 
@@ -159,13 +159,13 @@ img{
 }
 
 .prod_page{
-  border:2px solid green;
+ 
 }
 .prod_list{
   margin: 2%;
   display: flex;
   flex-wrap: wrap;
-  border:2px orange solid;
+ 
 
 }
 
