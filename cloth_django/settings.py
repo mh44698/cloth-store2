@@ -27,7 +27,8 @@ SECRET_KEY = '6-i28-m)=i5+_n%y(d$bx$r870slrx*v6cx9^c=)sg2wc0e=bo'
 DEBUG = True
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['clothes-stores.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1',            
+'limitless-beach-97890.herokuapp.com']
 
 
 # Application definition
@@ -79,10 +80,10 @@ WSGI_APPLICATION = 'cloth_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dcpmakk5gdsrjt',
-        'USER': 'thoaqzbvwcywyf',
-        'PASSWORD': 'ea18fc8586f1e3ef3193677098ada13684e58fb0664aef874ee058d8c60cd011',
-        'HOST': 'ec2-184-72-236-3.compute-1.amazonaws.com'
+        'NAME': 'ddm9kr9f0hcips',
+        'USER': 'pfzzchgvlsdohb',
+        'PASSWORD': '6804ef1be3a42f95f56ff3e3aa958149cfad72bc9bbc88c5e9308b45bf567fb2',
+        'HOST': 'ec2-184-72-235-159.compute-1.amazonaws.com:5432'
     }
 }
 
